@@ -1,4 +1,4 @@
-package cap5;
+package patricia;
 public class ArvorePatricia {
   private static abstract class PatNo { }
   private static class PatNoInt extends PatNo {

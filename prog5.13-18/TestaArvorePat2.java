@@ -1,9 +1,9 @@
 package cap5;
 import cap4.PermutacaoRandomica;
 
-public class TestaArvorePat {
+public class TestaArvorePat2 {
   public static void main (String[] args) {
-    ArvorePatricia dicionario = new ArvorePatricia (8);
+    ArvorePatricia dicionario = new ArvorePatricia (128);
     int min = 32, max = 126;
     
     char vetor[] = new char[max-min+1];
