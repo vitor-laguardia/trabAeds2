@@ -18,21 +18,32 @@ public class TestaArvorePat {
 		List<String> palavra = new ArrayList<String>();
      // String palavra = null;
 		int i = 0;
-			palavra.add(palavras.proximaPalavra());
+		palavra.add(palavras.proximaPalavra());
      	for (; ;)
 		{
-   	if ( palavra.get(i) == null)
+   		if ( palavra.get(i) == null)
 				break;
 	  		palavra.add(palavras.proximaPalavra());
-        	System.out.println ("Palavra"+ (i++) +": " + palavra.get(i-1)); 
+        	System.out.println ("Palavra"+ (i) +": " + palavra.get(i)); 
+			i++;
 		}
+
+		
+//		int[] arrayInt = new int[i-1];
+//		for( int j = 0; j < i; j++)
+//		{
+//			arrayInt[j] = Integer.parseInt(palavra.get(j));
+//			System.out.println(arrayInt[j]);
+//		}
+			
+				
 //    for (int j = 0; j < i ; j++) { 
 //      String c = palavra[j];
 //      dicionario.insere (c);
 //      System.out.println ("Inseriu chave"+ j + ": " + (int)c + " -- char:" + c);
 //    }
 //    dicionario.imprime ();
-
+		
 
       palavras.fecharArquivos();
     } catch (Exception e) {System.out.println (e.getMessage ());}    
